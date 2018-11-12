@@ -7,8 +7,8 @@
     <title>Personas</title>
 
     <!-- UIkit sources -->
-    <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit.min.css"/>
-    <script src="./node_modules/uikit/dist/js/uikit.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit.css"/>
+    <script src="./node_modules/uikit/dist/js/uikit.js"></script>
     <script src="./node_modules/uikit/dist/js/uikit-icons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
@@ -17,97 +17,115 @@
 
 <body>
 <div class="uk-container">
-    <a class="uk-button uk-button-default uk-margin-large-top" href="index.html"><span uk-icon="arrow-left"></span> Powrót do listy</a>
-    <a class="uk-button uk-button-default uk-margin-large-top uk-button-secondary" href="index.html">Dane obserwacji</a>
-    <div class="uk-child-width-1-3@m uk-margin" uk-grid>
-        <div>
-            <div class="uk-card uk-card-default uk-margin-large-top uk-margin">
-                <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                            <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
-                            </p>
-                        </div>
-                    </div>
+    <div class="uk-margin-large-top uk-margin-large-bottom">
+        <a class="uk-button uk-button-default" href="index.html"><span uk-icon="arrow-left"></span>
+            Powrót do listy</a>
+        <a class="uk-button uk-button-secondary" href="#modal-overflow" uk-toggle>Dane obserwacji</a>
+
+        <div id="modal-overflow" uk-modal>
+            <div class="uk-modal-dialog">
+
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Dane obserwacji</h2>
                 </div>
-                <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <div class="uk-modal-body" uk-overflow-auto>
+                    <p class="uk-text-meta">
+                        <span class="uk-margin-small-right" uk-icon="location"></span>
+                        <span class="uk-margin-right">Tesco Orkana, Lublin</span>
+                        <span class="uk-margin-small-right" uk-icon="clock"></span>
+                        <span class="uk-margin-right">18:25 - 19:25</span>
+                        <span class="uk-margin-small-right" uk-icon="calendar"></span>
+                        <span class="uk-margin-right">9 listopada</span>
+                        <span class="uk-margin-small-right" uk-icon="user"></span>
+                        <span>9</span>
+                    </p>
+                    <p>
+                        Obserwację przeprowadziłam w piątek wieczorem w lubelskim markecie Tesco przy ulicy Orkana.
+                        Łącznie zaobserwowałam 9 osób płacących telefonem na szacowanych 267 klientów ogółem. Skutecznie
+                        odbyłam rozmowę z trzema osobami.
+                    </p>
+                    <p>
+                        Ze względu na układ kas, a także chęć prowadzenia szerokiej obserwacji, utraciłam dane z jednej
+                        kasy. Licząc, że z jednej kasy otrzymałam średnio jednego klienta, tyle dokładnie wynosi strata
+                        tej obserwacji.
+                    </p>
+                    <p>
+                        Prędkość obsługi jednego klienta wynosiła średnio 1.8 minuty. Uśredniając, ogółem otwartych było
+                        8 kas.
+                    </p>
                 </div>
-                <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Zamknij</button>
+                    <a class="uk-button uk-button-primary" href="https://goo.gl/maps/9Hf3JvxLntp" target="_blank">Zobacz
+                        lokalizację</a>
                 </div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
-                <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                            <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-                <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
-                <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                            <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-                <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
-                </div>
+
             </div>
         </div>
     </div>
-    <div class="uk-child-width-1-3@m uk-margin" uk-grid>
+    <div class="uk-child-width-1-3@m uk-child-width-1-4 uk-margin-large-bottom" uk-grid="masonry: true">
         <div>
-            <div class="uk-card uk-card-default uk-margin-large-top uk-margin">
+            <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/ewelina.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Ewelina
+                                <span class="uk-badge uk-align-right app-badge-nfc">NFC</span>
+                            </h3>
                             <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
+                                <time datetime="2016-04-01T19:00">z córką, 31 lat</time>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>Robiła tygodniowe zakupy z ośmioletnią córką, Oliwią. Tuż po zakończeniu płatności odebrała
+                        połączenie i prowadziła
+                        rozmowę.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-icon-button" uk-icon="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/bogdan.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Bogdan
+                                <span class="uk-badge uk-align-right">Karty</span>
+                            </h3>
+                            <p class="uk-text-meta uk-margin-remove-top">
+                                z żoną, 43 lata
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>Robił zakupy z żoną. Nie dokonywał płatności telefonem, ale wykorzystał telefon do okazania karty
+                        lojalnościowej Tesco
+                        Clubcard. Zapytany, stwierdził, że wykorzystuje telefon także do płatności zbliżeniowych
+                        (Android Pay). Nie
+                        jest pozytywnie nastawiony do gadżetów płatniczych jak np. bransoletka, czy brelok.</p>
+                    <blockquote cite="#">
+                        <p class="uk-margin-small-bottom">
+                            Telefon wystarczy.
+                        </p>
+                        <footer>odpowiedź na pytanie o gadżety płatnicze</footer>
+                    </blockquote>
                 </div>
                 <div class="uk-card-footer">
                     <a href="#" class="uk-button uk-button-text">Read more</a>
@@ -115,22 +133,26 @@
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
+            <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/kuba.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Jakub
+                                <span class="uk-badge uk-align-right app-badge-nfc">NFC</span>
+                            </h3>
                             <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
+                                z mamą, 22 lata
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>Mama jest dla niego bardzo ważną osobą. Unika bezpośredniej rozmowy z nieznajomymi, zwłaszcza
+                        kobietami.</p>
                 </div>
                 <div class="uk-card-footer">
                     <a href="#" class="uk-button uk-button-text">Read more</a>
@@ -138,70 +160,53 @@
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
+            <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/dawid.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Dawid
+                                <span class="uk-badge uk-align-right">Karty</span>
+                            </h3>
                             <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
+                                39 lat
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>Na początku zakupów okazał kartę lojalnościową Tesco Clubcard, wykorzystując do tego telefon. Za
+                        zakupy
+                        zapłacił kartą.</p>
                 </div>
                 <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="uk-child-width-1-3@m uk-margin uk-margin-large-bottom" uk-grid>
-        <div>
-            <div class="uk-card uk-card-default uk-margin-large-top uk-margin">
-                <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                            <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                </div>
-                <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text">Read more</a>
+                    <a href="#" class="uk-button uk-button-text">ccc</a>
                 </div>
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
+            <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/artur.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Artur
+                                <span class="uk-badge uk-align-right app-badge-nfc">NFC</span>
+                            </h3>
                             <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
+                                z żoną, 56 lat
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>Na zakupach był ze swoją żoną, Barbarą. Za duże, całotygodniowe zakupy zapłacił zbliżeniowo.</p>
                 </div>
                 <div class="uk-card-footer">
                     <a href="#" class="uk-button uk-button-text">Read more</a>
@@ -209,22 +214,114 @@
             </div>
         </div>
         <div>
-            <div class="uk-card uk-card-default uk-margin-large-top">
+            <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/malgorzata.png">
                         </div>
                         <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Małgorzata
+                                <span class="uk-badge uk-align-right app-badge-nfc">NFC</span>
+                            </h3>
                             <p class="uk-text-meta uk-margin-remove-top">
-                                <time datetime="2016-04-01T19:00">April 01, 2016</time>
+                                kobieta biznesu, 42 lata
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>Za średniej wielkości zakupy zapłaciła zbliżeniowo telefonem. Zapytana, nie potrafiła
+                        odpowiedzieć, z jakiej aplikacji skorzystała. Jest optymistycznie nastawiona do gadżetów
+                        płatniczych.
+                    </p>
+                    <blockquote cite="#">
+                        <p class="uk-margin-small-bottom">
+                            Przymierzam się do kupna zegarka z funkcją płatności zbliżeniowych.
+                        </p>
+                        <footer>odpowiedź na pytanie o gadżety płatnicze</footer>
+                    </blockquote>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-text">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/andrzej.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Andrzej
+                                <span class="uk-badge uk-align-right">Karty</span>
+                            </h3>
+                            <p class="uk-text-meta uk-margin-remove-top">
+                                45 lat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>Robił samotnie średniej wielkości zakupy, za które zapłacił gotówką. Zanim jednak dokonał
+                        płatności, wykorzystał telefon do okazania karty lojalnościowej Tesco Clubcard.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-text">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/marcin.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Marcin
+                                <span class="uk-badge uk-align-right app-badge-blik">BLIK</span></h3>
+                            <p class="uk-text-meta uk-margin-remove-top">
+                                z synami, 39 lat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>Robił zakupy ze swoimi synami - ośmioletnim Adamem oraz trzyletnim Filipem. Były to średniej
+                        wielkości zakupy. Kupował artykuły codziennego użytku, żywność, a także odzież.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-text">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-border-circle" width="40" height="40"
+                                 src="assets/photos/persony-09.11/michal.png">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Michał
+                                <span class="uk-badge uk-align-right app-badge-nfc">NFC</span>
+                            </h3>
+                            <p class="uk-text-meta uk-margin-remove-top">
+                                z narzeczoną, 23 lata
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>Na zakupach był z narzeczoną, Patrycją. Były to zakupy na jeden wieczór. Nie przejmuje się
+                        zbytnio finansami - nie wziął paragonu</p>
                 </div>
                 <div class="uk-card-footer">
                     <a href="#" class="uk-button uk-button-text">Read more</a>
@@ -233,6 +330,9 @@
         </div>
     </div>
 </div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWsXgJmPJTLxrW87os2FIP4PVTLHA3HY&callback=myMap"
+        type="text/javascript"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
